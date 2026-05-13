@@ -47,9 +47,6 @@ export default function SourceCard({ source, index }: { source: SourceChunk; ind
       <p className="text-sm text-gray-600 leading-relaxed line-clamp-3">
         "{source.excerpt}"
       </p>
-      <div className="mt-2 text-xs text-gray-400">
-        {Math.round(source.similarity * 100)}% match
-      </div>
     </div>
   )
 }

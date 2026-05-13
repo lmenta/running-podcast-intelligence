@@ -1,5 +1,3 @@
-import { Sparkles } from 'lucide-react'
-
 interface Props {
   answer: string
   query: string
@@ -32,11 +30,7 @@ function renderInline(text: string) {
 export default function AnswerCard({ answer, query }: Props) {
   return (
     <div className="rounded-2xl border border-orange-100 bg-orange-50 p-6">
-      <div className="mb-3 flex items-center gap-2 text-sm font-semibold text-orange-600">
-        <Sparkles size={14} />
-        AI answer
-      </div>
-      <p className="mb-2 text-xs text-gray-400">Based on podcast transcripts matching "{query}"</p>
+      <p className="mb-3 text-xs text-gray-400">Based on podcast transcripts matching "{query}"</p>
       <div className="text-[15px] leading-relaxed text-gray-700">
         {renderMarkdown(answer)}
       </div>

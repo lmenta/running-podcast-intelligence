@@ -93,7 +93,7 @@ async function SearchPageInner({
           fallback={
             <div className="flex items-center justify-center gap-2 py-16 text-gray-400">
               <Loader2 size={18} className="animate-spin" />
-              Searching {USE_MOCK ? '(mock)' : 'podcast transcripts'}…
+              Searching podcast transcripts…
             </div>
           }
         >

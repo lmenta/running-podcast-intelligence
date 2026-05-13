@@ -70,11 +70,10 @@ export default async function HomePage() {
       </div>
 
       {/* Stats strip */}
-      <div className="grid grid-cols-3 gap-4 rounded-2xl border border-gray-200 bg-white p-6">
+      <div className="grid grid-cols-2 gap-4 rounded-2xl border border-gray-200 bg-white p-6">
         {[
           { value: stats.podcasts, label: 'Podcasts' },
           { value: stats.episodes_indexed.toLocaleString(), label: 'Episodes indexed' },
-          { value: stats.chunks.toLocaleString(), label: 'Searchable chunks' },
         ].map(s => (
           <div key={s.label} className="text-center">
             <div className="text-2xl font-bold text-gray-900">{s.value}</div>
